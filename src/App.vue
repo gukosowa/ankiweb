@@ -12,7 +12,8 @@
         href="https://vuejs.org"
         target="_blank"
         rel="noopener noreferrer"
-      >{{ message }}</a>
+        >{{ message }}</a
+      >
     </header>
   </div>
 </template>
@@ -21,20 +22,19 @@
 import TheHeader from '@app/components/TheHeader'
 
 export default {
-  data() {
-    return {
-      message: "Learn Vue"
-    }
+  components: {
+    TheHeader,
   },
 
-  components: {
-    TheHeader
-  }
+  data() {
+    return {
+      message: 'Learn Vue',
+    }
+  },
 }
 </script>
 
 <style>
-
 .App {
   text-align: center;
 }

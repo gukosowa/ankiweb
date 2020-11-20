@@ -3,9 +3,19 @@ module.exports = {
     public: '/',
     src: '/_dist_',
   },
-  plugins: ['@snowpack/plugin-vue', '@snowpack/plugin-dotenv'],
+  plugins: [
+    '@snowpack/plugin-vue',
+    '@snowpack/plugin-dotenv',
+    [
+      '@snowpack/plugin-run-script',
+      {
+        cmd: 'eslint "src/**/*.{vue,js}"',
+        watch: 'watch "$1" src',
+      },
+    ],
+  ],
   scripts: {
-    'build:css': 'postcss'
+    'build:css': 'postcss',
   },
   install: [
     /* ... */
@@ -26,4 +36,4 @@ module.exports = {
     '@app': './src',
     '@public': './public',
   },
-};
+}
