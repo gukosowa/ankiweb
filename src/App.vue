@@ -1,10 +1,10 @@
 <template>
   <div class="App">
-    <header class="App-header">
+    <header class="bg-white App-header">
       <img src="/logo.svg" class="App-logo" alt="logo" />
       <p>
         Edit
-        <code>src/App.vue</code> and save to reload.
+        <code class="m-6">src/App.vue</code> and save to reload.
       </p>
       <a
         class="App-link"
@@ -27,11 +27,12 @@ export default {
 </script>
 
 <style>
+
 .App {
   text-align: center;
 }
 .App-header {
-  background-color: #f9f6f6;
+  background-color: #eee;
   color: #32485f;
   min-height: 100vh;
   display: flex;
