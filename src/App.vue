@@ -1,7 +1,8 @@
 <template>
   <div class="App">
+    <the-header />
     <header class="bg-white App-header">
-      <img src="/logo.svg" class="App-logo" alt="logo" />
+      <img src="@public/logo.svg" class="App-logo" alt="logo" />
       <p>
         Edit
         <code class="m-6">src/App.vue</code> and save to reload.
@@ -17,13 +18,19 @@
 </template>
 
 <script>
+import TheHeader from '@app/components/TheHeader'
+
 export default {
   data() {
     return {
       message: "Learn Vue"
-    };
+    }
+  },
+
+  components: {
+    TheHeader
   }
-};
+}
 </script>
 
 <style>
