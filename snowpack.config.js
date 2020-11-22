@@ -13,6 +13,18 @@ module.exports = {
         watch: 'watch "$1" src',
       },
     ],
+    [
+      'snowpack-plugin-terser',
+      {
+        terserOptions: {
+          compress: {
+            arguments: true,
+            passes: 2,
+            unsafe_arrows: true,
+          },
+        },
+      },
+    ],
   ],
   scripts: {
     'build:css': 'postcss',
@@ -35,5 +47,6 @@ module.exports = {
   alias: {
     '@app': './src',
     '@public': './public',
+    '@node': './node_modules',
   },
 }

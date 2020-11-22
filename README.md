@@ -24,3 +24,7 @@ It correctly bundles Vue in production mode and optimizes the build for the best
 ### Q: What about Eject?
 
 No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+
+### Resources
+
+* Images: https://medshamim.com/med/how-to-design-beautiful-anki-cards
