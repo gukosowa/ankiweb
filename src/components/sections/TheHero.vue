@@ -37,7 +37,7 @@
       <img
         id="thehero"
         class="mx-auto will-change"
-        style="min-height: 220px; width: 100%"
+        style="min-height: 220px"
         alt="product photo"
         src="@app/assets/images/review2.png"
       />
