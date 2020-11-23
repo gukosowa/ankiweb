@@ -1,9 +1,6 @@
 <template>
   <section class="bg-white text-center text-white" @mousemove="getMousePos">
-    <div
-      class="gradient relative h-screen pt-16 text-center text-white z-2 mb-12 md:mb-0"
-      style="height: 45rem"
-    >
+    <div class="gradient relative py-20 md:pt-16 md:pb-48 z-2">
       <canvas
         id="canvas"
         class="pointer-events-none absolute -mt-16 w-full h-full z-0"
@@ -15,10 +12,10 @@
         Powerful, intelligent flash cards.<br />Remembering things just became
         much easier.
       </p>
-      <nav class="mt-12 flex flex-col md:flex-row justify-center">
+      <nav class="mt-12 mx-16 md:mx-0 flex flex-col md:flex-row justify-center">
         <a
           href="/"
-          class="mx-3 py-2 pl-4 pr-3 font-bold rounded-lg shadow-md text-white bg-blue-500 hover:bg-blue-600"
+          class="mx-3 py-2 pl-4 pr-3 font-bold rounded-lg shadow-md text-white bg-blue-600 hover:bg-primary"
         >
           Download now
           <svg
@@ -36,9 +33,11 @@
         <a href="/" class="mt-4 md:mt-0 mx-3 py-2 px-4"> Documentation </a>
       </nav>
     </div>
-    <div class="md:-mt-48 md:-mb-12">
+    <div class="-mt-10 md:-mt-28 md:-mb-12">
       <img
+        id="thehero"
         class="mx-auto will-change"
+        style="min-height: 220px; width: 100%"
         alt="product photo"
         src="@app/assets/images/review2.png"
       />
@@ -82,19 +81,20 @@ export default {
 
   methods: {
     initAnime() {
-      const nodes = [...document.querySelectorAll('img')]
-      initAnime(nodes, (a, tl, el) => {
+      const nodes = [...document.querySelectorAll('#thehero')]
+      initAnime(nodes, 0.3, (a, tl, el) => {
         a.set(el, {
-          top: '100vh',
-          left: '100vw',
+          translateY: '-10%',
           perspective: '400px',
+          scale: 0.9,
+          rotateX: '10deg',
         })
         tl.add(
           {
             targets: el,
-            translateY: '-10%',
-            rotateX: '10deg',
-            scale: 0.9,
+            translateY: '3%',
+            rotateX: '0deg',
+            scale: 1,
             duration: 200,
             easing: 'easeInOutCirc',
           },

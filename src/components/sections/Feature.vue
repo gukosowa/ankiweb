@@ -1,5 +1,5 @@
 <template>
-  <div class="text-black md:p-6">
+  <div class="text-black p-1 md:p-6">
     <slot name="image" />
     <h2 class="h1">{{ title }}</h2>
     <p class="hsub"><slot /></p>

@@ -5,6 +5,8 @@
         <template #image>
           <img
             class="w-20"
+            width="80"
+            height="80"
             src="@app/assets/images/rememberanything.svg"
             alt="Remember Anything icon"
           />
@@ -17,6 +19,8 @@
         <template #image>
           <img
             class="w-20"
+            width="80"
+            height="80"
             src="@app/assets/images/remembereverywhere.svg"
             alt="Remember Anywhere icon"
           />
@@ -30,6 +34,8 @@
         <template #image>
           <img
             class="w-20"
+            width="80"
+            height="80"
             src="@app/assets/images/rememberefficiently.svg"
             alt="Remember Efficiently icon"
           />

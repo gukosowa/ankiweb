@@ -1,9 +1,9 @@
 <template>
   <footer
-    class="bg-metal text-white md:p-10 sticky bottom-0 w-full z-2"
+    class="bg-metal text-white px-5 py-10 md:p-10 sticky bottom-0 w-full z-2"
     style="z-index: -1"
   >
-    <ul class="container flex flex-col md:flex-row">
+    <ul class="container grid grid-cols-2 md:grid-cols-4 md:flex-row">
       <li class="my-2 md:my-0">
         <h1 class="text-xl text-primary py-1">Community</h1>
         <ul>

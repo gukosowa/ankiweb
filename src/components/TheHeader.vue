@@ -6,6 +6,8 @@
           <span class="w-8 spinner">
             <img
               src="@app/assets/images/ankilogo.svg"
+              width="32"
+              height="32"
               class="h-full App-logo"
               alt="logo"
             />
