@@ -15,7 +15,11 @@
           <span class="text-2xl pl-2 font-bold">Anki</span>
         </h1>
         <ul class="hidden md:flex w-full justify-end">
-          <li><a href="/" class="mx-3 py-3 px-5">Products</a></li>
+          <li>
+            <router-link to="/home" class="mx-3 py-3 px-5"
+              >Products</router-link
+            >
+          </li>
           <li>
             <a href="/" class="mx-3 py-3 px-5">Documentation</a>
           </li>
